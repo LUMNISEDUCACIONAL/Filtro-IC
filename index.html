@@ -1,91 +1,125 @@
-<table width="100%" cellpadding="0" cellspacing="0" style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
-  <tr>
-    <td align="center">
-      <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.07);">
-        
-        <!-- LOGO -->
-        <tr>
-          <td align="center" style="padding: 20px;">
-            <img src="https://cdn.cativalab.digital/lumnis/files/081fe49c-734c-4ec4-9a01-bb7f31031e6c.png" alt="LUMNIS" width="160" style="display: block;">
-          </td>
-        </tr>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avaliação Estratégica de Capital</title>
 
-        <!-- CABEÇALHO COM GRADIENTE -->
-        <tr>
-          <td style="background: linear-gradient(90deg, #0081e3, #3f5bd4); color: #ffffff; padding: 30px 20px; text-align: center;">
-            <h2 style="margin: 0; font-size: 24px;">CFACI — certificado reconhecido pelo MEC</h2>
-            <p style="margin: 8px 0 0; font-size: 16px;">Faça a prova e retire seu certificado na Área de Membros</p>
-          </td>
-        </tr>
+  <meta name="theme-color" content="#00246E">
+  <link rel="icon" type="image/png" href="Imagens/Símbolo Azul.png">
 
-        <!-- CONTEÚDO PRINCIPAL -->
-        <tr>
-          <td style="padding: 28px 24px; color: #333333; font-size: 16px; line-height: 1.6;">
-            
-            <!-- SAUDAÇÃO COM NOME -->
-            <p style="margin:0 0 10px 0;">Olá, <strong>{{nome}}</strong>!</p>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-            <!-- AVISO -->
-            <div style="background:#fff8e1; border:1px solid #ffe8a1; border-radius:10px; padding:12px 14px; margin:14px 0;">
-              <p style="margin:0; font-size:14px; color:#6a5a1f;">
-                <strong>Aviso:</strong> este e-mail é destinado aos participantes do <strong>CFACI</strong>. 
-                Se você está no <strong>PRÉ-MBA ACI</strong>, por favor, ignore esta mensagem.
-              </p>
-            </div>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            b44: '#00246E',
+            b44red: '#FF3131'
+          },
+          keyframes: {
+            'fade-in': {
+              '0%': { opacity: 0, transform: 'translateY(10px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-in': 'fade-in 300ms ease-out both'
+          }
+        }
+      }
+    }
+  </script>
+</head>
 
-            <p>Temos uma ótima notícia: o <strong>CFACI</strong> passou a emitir <strong>certificado reconhecido pelo MEC</strong>.</p>
+<body class="min-h-screen bg-[#0b1220] text-gray-900">
 
-            <p>Para pegar o seu certificado, siga estes passos:</p>
+  <!-- BACKGROUND -->
+  <div class="fixed inset-0 -z-10 bg-gradient-to-br from-b44 via-[#081733] to-black"></div>
 
-            <ol style="padding-left: 20px; margin: 14px 0;">
-              <li>Acesse a <strong>Área de Membros</strong> no link abaixo.</li>
-              <li>Entre em <strong>CFACI</strong>.</li>
-              <li>Abra a aula <strong>“Encerramento — Parte 2”</strong>.</li>
-              <li><strong>Faça a Prova</strong> indicada nessa aula.</li>
-              <li><strong>Critério de aprovação:</strong> mínimo de <strong>75% de acerto</strong> — ou seja, <strong>≥ 18 de 24 questões</strong>.</li>
-              <li><strong>Após concluir e atingir 75%</strong>, <u>responda este e-mail</u> para enviarmos o <strong>formulário</strong> de emissão do certificado.</li>
-            </ol>
+  <!-- HEADER -->
+  <header class="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="Imagens/Símbolo  Branco.png" class="h-8 w-auto" alt="Logo">
+      <span class="font-extrabold tracking-wide text-white">
+        Inteligência Comercial
+      </span>
+    </div>
+  </header>
 
-            <!-- CAIXA DE PRAZO -->
-            <div style="background:#f7fbff; border:1px solid #e0ecff; border-radius:10px; padding:14px 16px; margin:18px 0;">
-              <p style="margin:0; font-size:14px; color:#2b4a7f;">
-                ⏳ <strong>Prazo:</strong> após o envio do formulário, a emissão do certificado leva cerca de <strong>45 dias</strong>.
-              </p>
-            </div>
+  <!-- MAIN -->
+  <main class="relative z-10 py-10 px-4 min-h-[80vh] flex items-start md:items-center">
+    <div class="w-full max-w-4xl mx-auto">
 
-            <p style="margin: 12px 0 0; font-size: 14px; color:#5a6b85;">
-              Já fez a prova? Vá direto ao comentário da aula <em>Encerramento — Parte 2</em> e baixe seu certificado (após aprovação).
+      <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+
+        <!-- TOP BAR -->
+        <div class="h-1 bg-gradient-to-r from-b44 via-b44red to-b44"></div>
+
+        <!-- TITLE + PROGRESS -->
+        <div class="px-6 md:px-8 pt-8">
+          <div class="text-center mb-6">
+            <h1 class="text-3xl md:text-4xl font-black text-b44 mb-2">
+              Avaliação Estratégica de Capital
+            </h1>
+            <p class="text-base md:text-lg font-semibold text-gray-600 max-w-3xl mx-auto">
+              Responda ao filtro estratégico para priorizarmos seu atendimento
             </p>
+          </div>
 
-            <!-- CAIXA DE DESTAQUE -->
-            <div style="background:#f7fbff; border:1px solid #e0ecff; border-radius:10px; padding:14px 16px; margin:22px 0;">
-              <p style="margin:0;">🔗 <strong>Link da Área de Membros:</strong> 
-                <a href="https://lumnis.app.cativa.digital" target="_blank" style="color:#1a73e8; text-decoration:none;">https://lumnis.app.cativa.digital</a>
-              </p>
+          <!-- PROGRESS -->
+          <div class="mb-6">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-sm font-semibold text-gray-600 uppercase">
+                Etapa <span id="etapaAtual">1</span> de <span id="etapasTotal">7</span>
+              </span>
+              <span class="text-sm font-bold text-gray-800">
+                <span id="pct">0</span>%
+              </span>
             </div>
 
-            <!-- BOTÃO CTA -->
-            <div style="text-align: center; margin: 18px 0 8px;">
-              <a href="https://lumnis.app.cativa.digital" target="_blank" style="background: linear-gradient(90deg, #1a73e8, #3f5bd4); color: #ffffff; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 3px 8px rgba(0,0,0,0.15);">
-                Acessar Área de Membros
-              </a>
+            <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+              <div
+                id="barra"
+                class="h-full w-0 bg-gradient-to-r from-b44 to-b44red transition-all duration-500">
+              </div>
             </div>
+          </div>
+        </div>
 
-            <p style="margin-top: 20px;">Qualquer dúvida, responda a este e-mail e nossa equipe te ajuda.</p>
+        <!-- CONTENT (JS INJETA AQUI) -->
+        <div id="content" class="px-6 md:px-8 pb-8 animate-fade-in"></div>
 
-            <p style="margin-top:28px;">Abraço,<br><strong>Equipe LUMNIS</strong></p>
-          </td>
-        </tr>
+        <!-- NAV -->
+        <div class="px-6 md:px-8 pb-8 flex justify-between gap-3">
+          <button
+            id="btnBack"
+            class="hidden px-4 py-2 rounded-xl border border-gray-300 bg-white font-bold">
+            Voltar
+          </button>
 
-        <!-- RODAPÉ -->
-        <tr>
-          <td style="background-color: #eeeeee; color: #777777; text-align: center; font-size: 12px; padding: 16px;">
-            © 2025 LUMNIS · Todos os direitos reservados<br>
-            <span style="font-size:11px;color:#9aa3ad;">Este e-mail foi enviado automaticamente. Em caso de dúvidas, responda a esta mensagem.</span>
-          </td>
-        </tr>
+          <div class="flex-1"></div>
 
-      </table>
-    </td>
-  </tr>
-</table>
+          <button
+            id="btnNext"
+            class="px-6 py-2 rounded-xl bg-gradient-to-r from-b44 to-b44red text-white font-extrabold shadow-lg">
+            Próximo
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="max-w-6xl mx-auto px-4 text-white/70 py-6 text-center text-sm">
+    © <span id="year"></span> Inteligência Comercial
+  </footer>
+
+  <!-- JS -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
